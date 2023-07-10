@@ -20,8 +20,8 @@ span {
 
 .card_main {
     position: relative;
-    width: 735px;
-    height: 512px;
+    width: 46rem;
+    height: 32rem;
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -32,15 +32,15 @@ span {
 
 .result {
     display: flex;
-    width: calc(735px / 2);
-    height: 512px;
+    width: calc(46rem / 2);
+    height: 32rem;
     background-image: var(--main-gradient);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     box-sizing: border-box;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px 20px;
+    padding: 3.125rem 1.25rem;
     text-align: center;
     color: white;
 }
@@ -50,20 +50,20 @@ span {
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 100px;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     justify-content: center;
     flex-direction: column;
     color: white;
 }
 
 .your_Result {
-    font-size: 1.25em;
+    font-size: 1.375rem;
     opacity: 75%;
 }
 
 .result_main_text {
-    font-size: 1.75em;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -81,33 +81,33 @@ span {
 
 .summary_card {
     display: flex;
-    width: calc(735px / 2);
-    height: 512px;
+    width: calc(46rem / 2);
+    height: 25.75rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
+    padding: 3.125rem 1.25rem;
     box-sizing: border-box;
 }
 
 .summary_items {
     display: flex;
-    width: 290px;
-    height: 55px;
+    width: 18.125rem;
+    height: 3.438rem;
     background-color: white;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    padding:15px 15px;
+    padding: 3.125rem 1.25rem;
     box-sizing: border-box;
 }
 
 .summary {
     margin-right: auto;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.category {
+.sumary_items_category {
     display: flex;
     flex-direction: row;
 
@@ -155,8 +155,8 @@ span {
     font-weight: 500;
     color: white;
     font-family: 'Hanken Grotesk', sans-serif;
-    width: 290px;
-    height: 55px;
+    width: 18.125rem;
+    height: 3.5rem;
     background-color: hsl(224, 30%, 27%);
     border-radius: 40px;
     padding:15px 15px;
@@ -171,24 +171,20 @@ span {
 
 @media screen and (max-width: 375px) {
     body {
-        display: block; 
-        width: 100vw;
-        height: 100vh;
+        justify-content: space-around;
         align-items: center;
         font-size: 0.5rem;
     }
 
     .card_main {
-        background-color: black;
+        top: 0%;
+        right: 0%;
+        height: 50%;
         flex-direction: column;
-        width: 100vw;
-        height: 30vh;
         margin: 0;
     }
 
     .result {
-        width: 100vw;
-        height: 30vh;
         border-radius: 0;
         padding: 0;
     }
@@ -199,7 +195,11 @@ span {
     }
 
     .summary_card {
-        width: 10%;
-        height: 10%;
+        padding: 0;
+        width: 60%;
+    }
+
+    .summary_items {
+        padding: 0;
     }
 }
